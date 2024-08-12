@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tipper</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+
+
+
+
+</head>
+<body>
+  <div class="hero">
+   
+    <div class="conent">
+
+
+      <h1 class="heading1">👑 AALOK MISHRA 👑</h1>
+      <h2 class="h2" >CRICKET KI DUNIYA KA SHENSHA</h2>
+      
+    </div>
+    
+   
+    
+    <div class="back counter mggg"><span class="blink">Free Joining Ends In...</span><span class="blink" id="countdown">59</span> <span style="font-size: 15px;" class="blink">seconds</span></div>
+    <br/>
+
+    
+ 
+    
+    
+    <div class="content-wrapper">
+      
+      <div class="points ">
+        <ul>
+
+          <li><i class="fa-solid fa-caret-right "></i>    100/100 MATCHED PASSED</li>
+          <li><i class="fa-solid fa-caret-right "></i>  IPL ME SARE MATCHES PASS KA DHAMAKA✅</li>
+          <li><i class="fa-solid fa-caret-right "></i>    35/38 TNPL KE MATCH PASS ✅</li>
+         
+        </ul>
+      </div>
+    </div>
+   
+<br/>
+   
+    <div class="button1">
+      <a href="https://telegram.me/+CeP4zomAt-EzOGNk" class=" back pd">
+        SUBSCRIBE FOR FREE <i class="fa-brands fa-telegram " aria-hidden="true"></i></a>
+    </div>
+   
+    
+
+   
+  </div>
+
+  <script>
+    let remainingSeconds = 60;
+   
+  
+    function updateCountdown() {
+      document.getElementById("countdown").innerHTML = `${remainingSeconds}`;
+     
+  
+      remainingSeconds -= 1;
+     
+  
+      if (remainingSeconds < 0) {
+        remainingSeconds = 60; 
+      }
+    
+    }
+  
+    updateCountdown();
+    const countdownInterval = setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
