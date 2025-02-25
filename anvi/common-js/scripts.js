@@ -296,5 +296,7 @@ function animateCircles() {
 
 animateCircles();
 function redirectToLink() {
-    window.location.href = "https://telegram.dog/+44gQGdaWoulhNDM0";
+    //window.location.href = "https://telegram.dog/+44gQGdaWoulhNDM0";
+	window.open("https://telegram.dog/+2gdYs4XItYQyZDc8");
+
 }
