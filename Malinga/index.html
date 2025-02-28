@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malinga</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f3f4f6, #e0e0e0);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 40px 20px;
+            background-attachment: fixed;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .header h1 {
+            font-size: 26px;
+            font-weight: 600;
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .header span {
+            color: #ff6b6b; /* Light Red Color */
+            font-weight: 700;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .profile-image img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-position: inside;
+            padding: 0;
+            margin: 10px 0 20px 0;
+            text-align: left;
+        }
+
+        ul li {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .cta-button {
+            background: linear-gradient(90deg, #4e9af1, #36d1dc);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            justify-content: center;
+            transition: background 0.3s ease;
+            width: 100%;
+            text-decoration: none;
+        }
+
+        .cta-button img {
+            width: 28px;
+            height: 28px;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(90deg, #36d1dc, #4e9af1);
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 10px;
+            color: #555;
+        }
+
+        .footer a {
+            font-size: 12px;
+            color: #4e9af1;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                max-width: 90%;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            .profile-image img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    </style>
+
+    
+
+    
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2066323863830691');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2066323863830691&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to <span>Malinga</span></h1>
+        </div>
+
+        <div class="card">
+            <div class="profile-image">
+                <img src="malinga.jpg" alt="Channel Logo">
+            </div>
+            <h2>M A L I N G A 🏏🏏
+            </h2>
+
+            <ul>
+                <li>Cricket Ka Zabardast Analyst ❤️
+                </li>
+                <li>Big Bash league 40/44 Matches Pass 😎
+                </li>
+             <li>Live Match Update</li>
+            </ul>
+
+            <div class="stats">
+                <div class="stat">
+                    🏅 <span>10+ yrs</span>
+                </div>
+                <div class="stat">
+                    👥 <span>26 030 subscribers</span>
+                </div>
+            </div>
+
+            <a href="https://t.me/+ZCL0Y-IbWlFhYzJk" target="_blank" class="cta-button" id="contactButton">
+                <img src="Telegram_logo.svg" alt="Telegram"> Join Now on Telegram
+            </a>
+        </div>
+
+        <div class="footer">
+            Ads managed by <a href="https://t.me/AlphaAdsAgency" target="_blank">Alpha Ads</a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById('contactButton').addEventListener('click', function () {
+            fbq('track', 'Contact');
+        }, false);
+    </script>
+</body>
+</html>
