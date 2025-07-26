@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak Wadhwa - Free Stock Market Guidance</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- AOS (Animate On Scroll) Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* A very light grey background */
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #3b82f6, #1e40af);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            animation: pulse-animation 2s infinite;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            animation: none;
+        }
+        .faq-item {
+            transition: max-height 0.5s ease-in-out;
+        }
+        .highlight-name {
+            background: linear-gradient(to right, #60a5fa, #a5b4fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 15px rgba(96, 165, 250, 0.5);
+        }
+        @keyframes pulse-animation {
+            0% {
+                box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+            }
+            50% {
+                box-shadow: 0 4px 25px rgba(37, 211, 102, 0.5);
+            }
+            100% {
+                box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+            }
+        }
+        .cta-button-blue {
+             animation-name: pulse-blue;
+        }
+        @keyframes pulse-blue {
+            0% {
+                box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+            }
+            50% {
+                box-shadow: 0 4px 25px rgba(59, 130, 246, 0.5);
+            }
+            100% {
+                box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+            }
+        }
+    </style>
+
+    <!-- Meta Pixel Code (Replace with your actual pixel code) -->
+    <script>
+    // Facebook Pixel Code should be placed here.
+    // This is crucial for tracking conversions from your Meta Ads.
+    // Example:
+    // !function(f,b,e,v,n,t,s)
+    // {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    // n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    // if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    // n.queue=[];t=b.createElement(e);t.async=!0;
+    // t.src=v;s=b.getElementsByTagName(e)[0];
+    // s.parentNode.insertBefore(t,s)}(window, document,'script',
+    // 'https://connect.facebook.net/en_US/fbevents.js');
+    // fbq('init', 'YOUR_PIXEL_ID');
+    // fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
+
+</head>
+<body class="bg-slate-50 text-gray-800">
+
+    <!-- HERO SECTION -->
+    <header class="relative bg-gray-800 overflow-hidden">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+            <!-- Top part: Image and main headline -->
+            <div class="flex items-center gap-6 sm:gap-8">
+                <!-- Image on the left -->
+                <div class="flex-shrink-0" data-aos="fade-right">
+                    <img class="h-24 w-24 sm:h-32 sm:w-32 lg:h-40 lg:w-40 rounded-full shadow-2xl object-cover border-4 border-slate-600" src="./1714530630803.jpeg" alt="Deepak Wadhwa">
+                </div>
+                <!-- Text on the right -->
+                <div data-aos="fade-left">
+                    <h1 class="text-2xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
+                        <span class="block">Build Real Wealth in the Stock Market</span>
+                        <span class="block highlight-name mt-1 sm:mt-2">with Deepak Wadhwa</span>
+                    </h1>
+                </div>
+            </div>
+            <!-- Bottom part: Paragraph and CTA -->
+            <div class="mt-8" data-aos="fade-up" data-aos-delay="200">
+                 <p class="text-left max-w-3xl text-lg text-blue-200">
+                    Get free, actionable insights and step-by-step guidance from a SEBI registered expert. We demystify the stock market for you, every single day.
+                </p>
+                <div class="mt-10 max-w-sm sm:max-w-none flex justify-start">
+                    <a href="https://telegram.dog/+Ci2ypMJ4-Fk0MWVl" target="_blank" onclick="trackTelegramClick()" class="cta-button cta-button-blue w-full sm:w-auto flex items-center justify-center px-8 py-4 border border-transparent text-base font-bold rounded-lg text-white bg-blue-600 hover:bg-blue-700 sm:text-lg">
+                        >> YES! JOIN FREE TELEGRAM CHANNEL <<
+                    </a>
+                </div>
+                <div class="mt-8">
+                    <p class="text-left text-xs sm:text-sm font-semibold text-gray-300 tracking-wide">
+                        ✅ 100% Free &nbsp;|&nbsp; 📈 15,000+ Members &nbsp;|&nbsp; 🔒 Privacy Respected
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- PROBLEM SECTION -->
+    <section class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center" data-aos="fade-up">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Does This Sound Familiar?
+                </h2>
+                <p class="mt-4 text-lg text-gray-600">The market is designed to be confusing. You're not alone.</p>
+            </div>
+            <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <div class="p-6 bg-slate-100 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex-shrink-0"><svg class="h-8 w-8 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+                    <h3 class="mt-4 text-xl font-bold text-gray-900">Overwhelmed?</h3>
+                    <p class="mt-2 text-base text-gray-600">Drowning in confusing jargon, conflicting tips, and endless YouTube videos that lead nowhere.</p>
+                </div>
+                <div class="p-6 bg-slate-100 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex-shrink-0"><svg class="h-8 w-8 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" /></svg></div>
+                    <h3 class="mt-4 text-xl font-bold text-gray-900">Losing Money?</h3>
+                    <p class="mt-2 text-base text-gray-600">Entering trades based on hype or FOMO, only to see your portfolio in the red.</p>
+                </div>
+                <div class="p-6 bg-slate-100 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex-shrink-0"><svg class="h-8 w-8 text-yellow-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9V3" /></svg></div>
+                    <h3 class="mt-4 text-xl font-bold text-gray-900">Too Busy?</h3>
+                    <p class="mt-2 text-base text-gray-600">You have a job, a family, a life. You don't have 8 hours a day to stare at charts.</p>
+                </div>
+                <div class="p-6 bg-slate-100 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex-shrink-0"><svg class="h-8 w-8 text-purple-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+                    <h3 class="mt-4 text-xl font-bold text-gray-900">Unsure Who to Trust?</h3>
+                    <p class="mt-2 text-base text-gray-600">Worried about fake gurus and paid "tip services" that promise the moon but deliver losses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUTION SECTION -->
+    <section class="py-16 sm:py-24 bg-slate-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl gradient-text">
+                        Introducing: Deepak Wadhwa's Trading Circle
+                    </h2>
+                    <p class="mt-4 text-xl text-gray-600">
+                        We created this for one simple reason: to level the playing field. We are a team of SEBI-registered research analysts and full-time traders who believe financial growth should be accessible to everyone.
+                    </p>
+                    <p class="mt-6 text-lg text-gray-600">
+                        Our free Telegram channel isn't just another "signal group." It's a complete ecosystem designed to make you a smarter, more profitable, and more confident investor.
+                    </p>
+                    <p class="mt-6 text-2xl font-bold text-gray-800 italic">
+                        "We give you the fish, and we also teach you how to fish."
+                    </p>
+                </div>
+                <div class="mt-10 lg:mt-0 flex justify-center" data-aos="fade-left">
+                    <img class="rounded-lg shadow-xl" src="./web.telegram.org_k_(iPhone XR).png" alt="Telegram and Stock Chart">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT YOU GET SECTION -->
+    <section class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center" data-aos="zoom-in">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Inside Our FREE Channel, You'll Get:
+                </h2>
+            </div>
+            <div class="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="flex" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex-shrink-0"><div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white"><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg></div></div>
+                    <div class="ml-4"><h3 class="text-lg leading-6 font-bold text-gray-900">Daily Pre-Market Briefing</h3><p class="mt-2 text-base text-gray-600">Start your day with a clear picture. We analyze global cues, Nifty/Bank Nifty levels, and key stocks to watch.</p></div>
+                </div>
+                <div class="flex" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex-shrink-0"><div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white"><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg></div></div>
+                    <div class="ml-4"><h3 class="text-lg leading-6 font-bold text-gray-900">Actionable Trade Ideas (with Logic)</h3><p class="mt-2 text-base text-gray-600">We don't just say "BUY". We explain the 'WHY' with charts, entry levels, stop-loss, and targets.</p></div>
+                </div>
+                <div class="flex" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex-shrink-0"><div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white"><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v11.494m-9-5.747h18" /></svg></div></div>
+                    <div class="ml-4"><h3 class="text-lg leading-6 font-bold text-gray-900">"Zero to Hero" Learning Series</h3><p class="mt-2 text-base text-gray-600">From "What is a Candlestick?" to advanced Technical Analysis, we share daily educational content.</p></div>
+                </div>
+                <div class="flex" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex-shrink-0"><div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white"><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.636 18.364a9 9 0 010-12.728m2.828 9.9a5 5 0 010-7.072" /></svg></div></div>
+                    <div class="ml-4"><h3 class="text-lg leading-6 font-bold text-gray-900">Live Market Voice Notes</h3><p class="mt-2 text-base text-gray-600">Real-time audio updates on market direction, trade adjustments, and profit-booking opportunities.</p></div>
+                </div>
+                <div class="flex" data-aos="fade-up" data-aos-delay="500">
+                    <div class="flex-shrink-0"><div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white"><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" /></svg></div></div>
+                    <div class="ml-4"><h3 class="text-lg leading-6 font-bold text-gray-900">Portfolio & Wealth-Building Stocks</h3><p class="mt-2 text-base text-gray-600">Handpicked, fundamentally strong stocks for long-term investment to build your robust portfolio.</p></div>
+                </div>
+                <div class="flex" data-aos="fade-up" data-aos-delay="600">
+                    <div class="flex-shrink-0"><div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white"><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.653-.225-1.26-.62-1.742M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-4 6c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" /></svg></div></div>
+                    <div class="ml-4"><h3 class="text-lg leading-6 font-bold text-gray-900">A Supportive Community</h3><p class="mt-2 text-base text-gray-600">Join thousands of like-minded traders. Ask questions, share your analysis, and grow together.</p></div>
+                </div>
+            </div>
+            <div class="mt-16 text-center" data-aos="fade-up">
+                <a href="https://t.me/+Ci2ypMJ4-Fk0MWVl" target="_blank" onclick="trackTelegramClick()" class="cta-button cta-button-blue inline-flex items-center justify-center px-10 py-4 border border-transparent text-lg font-bold rounded-lg text-white bg-blue-600 hover:bg-blue-700">
+                    GET INSTANT ACCESS FOR FREE
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERFORMANCE SECTION -->
+    <section class="py-16 sm:py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center" data-aos="fade-up">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Performance Speaks for Itself</h2>
+                <p class="mt-4 text-lg text-gray-600">Transparency is our core value. We track every idea we share.</p>
+            </div>
+            <div class="mt-12" data-aos="zoom-in-up">
+                <img class="rounded-lg shadow-xl mx-auto" src="https://placehold.co/1200x600/e0e7ff/1e40af?text=Model+Portfolio+vs+Nifty+50" alt="Portfolio Performance Chart">
+                <p class="text-center mt-2 text-sm text-gray-500">Model Portfolio Performance vs. Nifty 50 (Last 12 months)</p>
+            </div>
+            
+            <div class="mt-12 space-y-8 lg:hidden">
+                <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-lg font-bold text-gray-900">TATA MOTORS</h3><p class="text-sm text-gray-500">05 Jun '25</p>
+                    <div class="mt-4 grid grid-cols-2 gap-4 text-base"><div><span class="font-semibold text-gray-500 block text-sm">Type</span> Swing</div><div><span class="font-semibold text-gray-500 block text-sm">Call</span> <span class="font-bold text-green-600">BUY</span></div><div><span class="font-semibold text-gray-500 block text-sm">Entry</span> ₹950</div><div><span class="font-semibold text-gray-500 block text-sm">Target</span> ₹1040</div><div class="col-span-2"><span class="font-semibold text-gray-500 block text-sm">Profit</span> <span class="font-bold text-green-600 text-lg">+9.47%</span> (14 Days)</div></div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-lg font-bold text-gray-900">ICICI BANK</h3><p class="text-sm text-gray-500">21 Jul '25</p>
+                    <div class="mt-4 grid grid-cols-2 gap-4 text-base"><div><span class="font-semibold text-gray-500 block text-sm">Type</span> Intraday</div><div><span class="font-semibold text-gray-500 block text-sm">Call</span> <span class="font-bold text-green-600">BUY</span></div><div><span class="font-semibold text-gray-500 block text-sm">Entry</span> ₹1120</div><div><span class="font-semibold text-gray-500 block text-sm">Target</span> ₹1135</div><div class="col-span-2"><span class="font-semibold text-gray-500 block text-sm">Profit</span> <span class="font-bold text-green-600 text-lg">+1.34%</span> (&lt;1 Day)</div></div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-lg font-bold text-gray-900">RELIANCE</h3><p class="text-sm text-gray-500">10 Apr '25</p>
+                    <div class="mt-4 grid grid-cols-2 gap-4 text-base"><div><span class="font-semibold text-gray-500 block text-sm">Type</span> Positional</div><div><span class="font-semibold text-gray-500 block text-sm">Call</span> <span class="font-bold text-green-600">BUY</span></div><div><span class="font-semibold text-gray-500 block text-sm">Entry</span> ₹2850</div><div><span class="font-semibold text-gray-500 block text-sm">Target</span> ₹3100</div><div class="col-span-2"><span class="font-semibold text-gray-500 block text-sm">Profit</span> <span class="font-bold text-green-600 text-lg">+8.77%</span> (45 Days)</div></div>
+                </div>
+            </div>
+
+            <div class="mt-16 flow-root hidden lg:block" data-aos="fade-up">
+                <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                    <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+                        <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 sm:rounded-lg">
+                            <table class="min-w-full divide-y divide-gray-300">
+                                <thead class="bg-gray-200"><tr><th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">Stock</th><th scope="col" class="px-3 py-3.5 text-center text-sm font-semibold text-gray-900">Type</th><th scope="col" class="px-3 py-3.5 text-center text-sm font-semibold text-gray-900">Entry Date</th><th scope="col" class="px-3 py-3.5 text-center text-sm font-semibold text-gray-900">Call</th><th scope="col" class="px-3 py-3.5 text-center text-sm font-semibold text-gray-900">Entry Price (₹)</th><th scope="col" class="px-3 py-3.5 text-center text-sm font-semibold text-gray-900">Target Hit (₹)</th><th scope="col" class="px-3 py-3.5 text-center text-sm font-semibold text-gray-900">Profit (%)</th><th scope="col" class="px-3 py-3.5 text-center text-sm font-semibold text-gray-900">Days Held</th></tr></thead>
+                                <tbody class="divide-y divide-gray-200 bg-white">
+                                    <tr><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">TATA MOTORS</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 text-center">Swing</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 text-center">05 Jun '25</td><td class="whitespace-nowrap px-3 py-4 text-sm text-green-600 font-bold text-center">BUY</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 text-center">950</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 text-center">1040</td><td class="whitespace-nowrap px-3 py-4 text-sm text-green-600 font-bold text-center">+9.47%</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 text-center">14</td></tr>
+                                    <tr><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">ICICI BANK</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 text-center">Intraday</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 text-center">21 Jul '25</td><td class="whitespace-nowrap px-3 py-4 text-sm text-green-600 font-bold text-center">BUY</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 text-center">1120</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 text-center">1135</td><td class="whitespace-nowrap px-3 py-4 text-sm text-green-600 font-bold text-center">+1.34%</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 text-center">&lt;1</td></tr>
+                                    <tr><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">RELIANCE</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 text-center">Positional</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 text-center">10 Apr '25</td><td class="whitespace-nowrap px-3 py-4 text-sm text-green-600 font-bold text-center">BUY</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 text-center">2850</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 text-center">3100</td><td class="whitespace-nowrap px-3 py-4 text-sm text-green-600 font-bold text-center">+8.77%</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 text-center">45</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 text-center">
+                <p class="text-xs text-gray-500"><strong>Disclaimer:</strong> Stock market investments are subject to market risks. The examples above are for educational purposes only. We are SEBI Registered Research Analysts INH00000XXXX.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOUNDER SECTION -->
+    <section class="py-16 sm:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+            <img class="w-32 h-32 rounded-full mx-auto shadow-lg" src="https://placehold.co/200x200/334155/FFFFFF?text=DW" alt="Founder's Photo">
+            <h2 class="mt-6 text-3xl font-extrabold text-gray-900">Meet Your Guide, Deepak Wadhwa</h2>
+            <p class="mt-4 text-lg text-gray-600">"Hello, I'm Deepak Wadhwa. Just a few years ago, I was exactly where you are now. I lost over ₹2 Lakhs in my first year by following bad advice and trading emotionally. Frustrated, I dedicated the next 5 years to mastering the markets, getting certified by SEBI, and developing a risk-first strategy that actually works. I created this community to be the guide I wish I had when I started."</p>
+            <p class="mt-4 font-bold text-gray-900">- Deepak Wadhwa, Founder & Chief Analyst</p>
+            <p class="text-sm text-gray-500">SEBI Registered Analyst: INH00000XXXX</p>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="py-16 sm:py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center" data-aos="fade-up">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">What Our Members Are Saying...</h2>
+            </div>
+            <div class="mt-12 grid gap-8 md:grid-cols-1 lg:grid-cols-3">
+                <div class="p-8 bg-white rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center"><img class="h-12 w-12 rounded-full" src="https://placehold.co/100x100/fde68a/422006?text=PS" alt="Priya S."><div class="ml-4"><div class="text-lg font-bold text-gray-900">Priya S.</div><div class="text-sm text-gray-500">Bengaluru</div></div></div>
+                    <blockquote class="mt-6 text-gray-600"><p>"This is the ONLY channel you need. The daily analysis has given me so much confidence. I finally made my first profitable swing trade last week! Thank you!"</p></blockquote>
+                </div>
+                <div class="p-8 bg-white rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center"><img class="h-12 w-12 rounded-full" src="https://placehold.co/100x100/a5b4fc/1e1b4b?text=RM" alt="Rohit M."><div class="ml-4"><div class="text-lg font-bold text-gray-900">Rohit M.</div><div class="text-sm text-gray-500">Mumbai</div></div></div>
+                    <blockquote class="mt-6 text-gray-600"><p>"As a working professional, the pre-market report and live updates are a lifesaver. The analysis is top-notch and, more importantly, honest. No false promises here."</p></blockquote>
+                </div>
+                <div class="p-8 bg-white rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center"><img class="h-12 w-12 rounded-full" src="https://placehold.co/100x100/99f6e4/0f766e?text=AG" alt="Ankit G."><div class="ml-4"><div class="text-lg font-bold text-gray-900">Ankit G.</div><div class="text-sm text-gray-500">Delhi</div></div></div>
+                    <blockquote class="mt-6 text-gray-600"><p>"I've been in markets for 3 years and have been part of many paid groups. The quality of free content here is better than most. The focus on risk management sets them apart."</p></blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA SECTION -->
+    <section class="bg-gray-800">
+        <div class="max-w-4xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8" data-aos="zoom-in">
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                <span class="block">Your Journey to Confident Trading Starts Now.</span>
+            </h2>
+            <p class="mt-4 text-lg leading-6 text-blue-200">Stop letting fear and confusion control your financial destiny. In the next 2 minutes, you could be inside our channel, taking the first real step towards becoming a disciplined, profitable trader.</p>
+            <a href="https://t.me/yourchannel" target="_blank" onclick="trackTelegramClick()" class="cta-button mt-8 w-full inline-flex items-center justify-center px-8 py-5 border border-transparent text-xl font-extrabold rounded-lg text-white bg-green-500 hover:bg-green-600 sm:w-auto">
+                ✅ CLICK HERE TO JOIN FOR FREE ✅
+            </a>
+            <p class="mt-4 text-sm text-gray-400">Takes 30 seconds. No credit card needed. Ever.</p>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="py-16 sm:py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-center text-3xl font-extrabold text-gray-900" data-aos="fade-up">Got Questions? We've Got Answers.</h2>
+            <div class="mt-12 space-y-4" id="faq-container">
+                <div class="border-t-2 border-gray-200 pt-4" data-aos="fade-up" data-aos-delay="100">
+                    <dt><button class="faq-toggle flex w-full items-start justify-between text-left text-gray-500"><span class="font-medium text-gray-900">Is this channel really free? What's the catch?</span><span class="ml-6 flex h-7 items-center"><svg class="h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span></button></dt>
+                    <dd class="faq-answer mt-2 pr-12 overflow-hidden max-h-0"><p class="text-base text-gray-600">Yes, it is 100% free to join and receive all the content mentioned. There is no catch. Our mission is to build India's most trusted trading community. We may offer optional, advanced paid courses in the future, but the core Telegram channel will always remain free.</p></dd>
+                </div>
+                <div class="border-t-2 border-gray-200 pt-4" data-aos="fade-up" data-aos-delay="200">
+                    <dt><button class="faq-toggle flex w-full items-start justify-between text-left text-gray-500"><span class="font-medium text-gray-900">Do I need a lot of money to start?</span><span class="ml-6 flex h-7 items-center"><svg class="h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span></button></dt>
+                    <dd class="faq-answer mt-2 pr-12 overflow-hidden max-h-0"><p class="text-base text-gray-600">Absolutely not. We teach principles that apply whether you have ₹5,000 or ₹50 Lakhs. We focus heavily on risk management to protect your capital, which is the most important lesson for traders of all sizes.</p></dd>
+                </div>
+                <div class="border-t-2 border-gray-200 pt-4" data-aos="fade-up" data-aos-delay="300">
+                    <dt><button class="faq-toggle flex w-full items-start justify-between text-left text-gray-500"><span class="font-medium text-gray-900">Are you a "tips" or "calls" provider?</span><span class="ml-6 flex h-7 items-center"><svg class="h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span></button></dt>
+                    <dd class="faq-answer mt-2 pr-12 overflow-hidden max-h-0"><p class="text-base text-gray-600">While we provide actionable trade ideas, we are an "education-first" platform. Our goal is to empower you to make your own decisions. We provide the logic behind every idea so you learn in the process and eventually become a self-sufficient trader.</p></dd>
+                </div>
+                <div class="border-t-2 border-gray-200 pt-4" data-aos="fade-up" data-aos-delay="400">
+                    <dt><button class="faq-toggle flex w-full items-start justify-between text-left text-gray-500"><span class="font-medium text-gray-900">How do I join the channel?</span><span class="ml-6 flex h-7 items-center"><svg class="h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span></button></dt>
+                    <dd class="faq-answer mt-2 pr-12 overflow-hidden max-h-0"><p class="text-base text-gray-600">It's simple! 1. Click any "Join" button on this page. 2. It will open Telegram on your device. 3. Click the "Join" button at the bottom of your screen inside the app. That's it!</p></dd>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-base font-medium text-white">Deepak Wadhwa</p>
+            <p class="mt-2 text-sm text-gray-400">Contact: [your-email@example.com]</p>
+            <div class="mt-6 text-xs text-gray-500 max-w-3xl mx-auto">
+                <p><strong>Disclaimer:</strong> Investing and trading in the stock market involves substantial risk. You should be aware of the risks involved and use the information provided in our channel for educational purposes only. We are not financial advisors. All trade ideas are based on our analysis and are not direct recommendations. Please consult with your financial advisor before making any investment decisions. We are SEBI Registered Research Analysts [Your SEBI Number].</p>
+            </div>
+            <p class="mt-8 text-center text-base text-gray-400">&copy; 2025 Deepak Wadhwa. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // --- Initialize AOS ---
+        AOS.init({
+            duration: 800, // values from 0 to 3000, with step 50ms
+            once: true, // whether animation should happen only once - while scrolling down
+        });
+
+        // --- FAQ Accordion Script ---
+        document.addEventListener('DOMContentLoaded', function () {
+            const faqToggles = document.querySelectorAll('.faq-toggle');
+            faqToggles.forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    const answer = toggle.parentElement.nextElementSibling;
+                    const icon = toggle.querySelector('svg');
+
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        // Close all other open FAQs before opening the new one
+                        faqToggles.forEach(otherToggle => {
+                            if (otherToggle !== toggle) {
+                                otherToggle.parentElement.nextElementSibling.style.maxHeight = null;
+                                otherToggle.querySelector('svg').style.transform = 'rotate(0deg)';
+                            }
+                        });
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+        });
+
+        // --- Meta Pixel Conversion Tracking Script ---
+        function trackTelegramClick() {
+            console.log('Telegram button clicked. Firing conversion event.');
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead', { content_name: 'Telegram Channel Join' });
+            }
+        }
+    </script>
+</body>
+</ht
