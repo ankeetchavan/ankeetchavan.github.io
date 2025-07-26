@@ -126,6 +126,13 @@
                         ✅ 100% Free &nbsp;|&nbsp; 📈 15,000+ Members &nbsp;|&nbsp; 🔒 Privacy Respected
                     </p>
                 </div>
+                <!-- Telegram Download Announcement -->
+                <div class="mt-6">
+                    <p class="text-left text-sm text-gray-400">
+                        Don't have Telegram yet? 
+                        <a href="#" id="telegram-download-link" class="font-semibold text-blue-400 hover:text-blue-300 underline">Download Now</a>
+                    </p>
+                </div>
             </div>
         </div>
     </header>
@@ -183,7 +190,7 @@
                     </p>
                 </div>
                 <div class="mt-10 lg:mt-0 flex justify-center" data-aos="fade-left">
-                    <img class="rounded-lg shadow-xl" src="./web.telegram.org_k_(iPhone XR).png" alt="Telegram and Stock Chart">
+                    <img class="rounded-lg shadow-xl" src="https://placehold.co/600x400/3b82f6/FFFFFF?text=Telegram+Channel" alt="Telegram and Stock Chart">
                 </div>
             </div>
         </div>
@@ -321,7 +328,7 @@
                 <span class="block">Your Journey to Confident Trading Starts Now.</span>
             </h2>
             <p class="mt-4 text-lg leading-6 text-blue-200">Stop letting fear and confusion control your financial destiny. In the next 2 minutes, you could be inside our channel, taking the first real step towards becoming a disciplined, profitable trader.</p>
-            <a href="https://t.me/yourchannel" target="_blank" onclick="trackTelegramClick()" class="cta-button mt-8 w-full inline-flex items-center justify-center px-8 py-5 border border-transparent text-xl font-extrabold rounded-lg text-white bg-green-500 hover:bg-green-600 sm:w-auto">
+            <a href="https://t.me/+Ci2ypMJ4-Fk0MWVl" target="_blank" onclick="trackTelegramClick()" class="cta-button mt-8 w-full inline-flex items-center justify-center px-8 py-5 border border-transparent text-xl font-extrabold rounded-lg text-white bg-green-500 hover:bg-green-600 sm:w-auto">
                 ✅ CLICK HERE TO JOIN FOR FREE ✅
             </a>
             <p class="mt-4 text-sm text-gray-400">Takes 30 seconds. No credit card needed. Ever.</p>
@@ -359,7 +366,7 @@
             <p class="text-base font-medium text-white">Deepak Wadhwa</p>
             <p class="mt-2 text-sm text-gray-400">Contact: [your-email@example.com]</p>
             <div class="mt-6 text-xs text-gray-500 max-w-3xl mx-auto">
-                <p><strong>Disclaimer:</strong> Investing and trading in the stock market involves substantial risk. You should be aware of the risks involved and use the information provided in our channel for educational purposes only. We are not financial advisors. All trade ideas are based on our analysis and are not direct recommendations. Please consult with your financial advisor before making any investment decisions. We are SEBI Registered Research Analysts [Your SEBI Number].</p>
+                <p><strong>Disclaimer:</strong> Investing and trading in the stock market involves substantial risk. You should be aware of the risks involved and use the information provided in our channel for educational purposes only. We are not financial advisors. All trade ideas are based on our analysis and are not direct recommendations. Please consult with your financial advisor before making any investment decisions. We are SEBI Registered Research Analysts.</p>
             </div>
             <p class="mt-8 text-center text-base text-gray-400">&copy; 2025 Deepak Wadhwa. All Rights Reserved.</p>
         </div>
@@ -374,8 +381,32 @@
             once: true, // whether animation should happen only once - while scrolling down
         });
 
+        // --- Set OS-specific Telegram Download Link ---
+        function setTelegramDownloadLink() {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            const downloadLink = document.getElementById('telegram-download-link');
+            
+            if (downloadLink) {
+                let storeUrl = 'https://telegram.org/dl'; // Default fallback link
+
+                // Check for iOS devices
+                if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                    storeUrl = 'https://apps.apple.com/app/telegram-messenger/id686449807';
+                } 
+                // Check for Android devices
+                else if (/android/i.test(userAgent)) {
+                    storeUrl = 'https://play.google.com/store/apps/details?id=org.telegram.messenger';
+                }
+                
+                downloadLink.href = storeUrl;
+                downloadLink.target = '_blank'; // Open in a new tab
+            }
+        }
+
         // --- FAQ Accordion Script ---
         document.addEventListener('DOMContentLoaded', function () {
+            setTelegramDownloadLink(); // Set the download link on page load
+
             const faqToggles = document.querySelectorAll('.faq-toggle');
             faqToggles.forEach(toggle => {
                 toggle.addEventListener('click', () => {
@@ -409,4 +440,4 @@
         }
     </script>
 </body>
-</ht
+</html>
