@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Cricket Predictions | Join Now</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Premium Sports Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        telegram: '#229ED9',
+                        brandGold: '#FFD700',
+                        brandDark: '#0B132B',
+                    },
+                    animation: {
+                        'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-slight': 'bounceSlight 2s infinite',
+                    },
+                    keyframes: {
+                        bounceSlight: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #ffffff;
+            background-color: #0B132B;
+        }
+
+        /* Stadium Background */
+        .bg-stadium {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background-image: url('https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=2805&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Premium Dark Overlay */
+        .bg-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(135deg, rgba(11, 19, 43, 0.9) 0%, rgba(28, 37, 65, 0.8) 100%);
+            backdrop-filter: blur(5px);
+        }
+
+        /* Premium Glass Card */
+        .premium-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Glowing Profile */
+        .profile-img {
+            border: 4px solid #FFD700;
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Telegram Button */
+        .btn-telegram {
+            background: linear-gradient(90deg, #0088cc, #229ED9);
+            box-shadow: 0 4px 15px rgba(34, 158, 217, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn-telegram:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(34, 158, 217, 0.6);
+            background: linear-gradient(90deg, #229ED9, #0088cc);
+        }
+
+        /* Feature Item */
+        .feature-box {
+            background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+            border-left: 4px solid #FFD700;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-box:hover {
+            background: linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.05));
+            transform: translateX(5px);
+        }
+
+        /* Scoreboard Timer */
+        .timer-block {
+            background: #111;
+            border: 2px solid #333;
+            border-radius: 8px;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col items-center justify-center pb-24 md:pb-12 pt-8 md:pt-12">
+
+    <!-- Backgrounds -->
+    <div class="bg-stadium"></div>
+    <div class="bg-overlay"></div>
+
+    <!-- Main Responsive Container -->
+    <div class="w-full max-w-2xl mx-auto px-4 relative z-10">
+        
+        <!-- Premium Container Card -->
+        <div class="premium-card rounded-3xl p-6 md:p-10">
+            
+            <!-- Header Badge -->
+            <div class="flex justify-center mb-6">
+                <div class="bg-brandGold text-black font-bold px-4 py-1 rounded-full text-xs md:text-sm tracking-widest uppercase shadow-[0_0_15px_rgba(255,215,0,0.3)]">
+                    <i class="fas fa-trophy mr-1"></i> India's #1 Cricket Channel
+                </div>
+            </div>
+
+            <!-- Profile & Title Section -->
+            <div class="text-center mb-8">
+                <div class="relative inline-block mb-4 animate-bounce-slight">
+                    <img src="https://cdn5.telesco.pe/file/oHLWSaDIHFOlJC1rx6_gSSlzVFT-gxinzD6SdcmcO5ZsyaG5XF2Y-oyGnTMZbm8vmuQg5nQhbCCTpje-yZzjlTs_8AHYDf9Cw9JbZZLYbTPNMOEEuI74473loaRav8h29oJY8Hvn4Jh6gMqCLIw5UrLXBJaWi24gH_qpJzASR097L0CdYREMNF80nvYGwJb1Ie2tBXVW28dh71P7B-01wvTJ0EIpa6sxzlyiLGJBa5SgmLrBN8MVRswfiQAnbb6vNQn7CQFItjTmlln-VqRRV5-S3QEH_yDH9-d6v2RGU5cb0N7zZ4tb3mRYNsFxDmaJK6bW8FPvp94ckeOpue_vxw.jpg" 
+                         alt="Cricket Expert" 
+                         class="w-28 h-28 md:w-32 md:h-32 rounded-full object-cover profile-img">
+                    <div class="absolute -bottom-2 -right-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded border-2 border-brandDark flex items-center gap-1">
+                        <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span> LIVE
+                    </div>
+                </div>
+                
+                <h1 class="text-3xl md:text-5xl font-black tracking-tight leading-tight uppercase">
+                    Dominate <span class="text-brandGold">The Pitch</span>
+                </h1>
+                <p class="text-gray-300 mt-3 text-sm md:text-base font-medium max-w-lg mx-auto">
+                    Join the most accurate cricket prediction community. Stop guessing, start winning with expert analysis.
+                </p>
+            </div>
+
+            <!-- Scoreboard Countdown Timer -->
+            <div class="bg-black/40 rounded-xl p-4 md:p-6 mb-8 border border-white/10 text-center">
+                <h3 class="text-red-500 font-bold tracking-widest text-xs md:text-sm mb-3 uppercase flex items-center justify-center gap-2">
+                    <i class="fas fa-clock animate-pulse"></i> Free Entry Link Expires In:
+                </h3>
+                
+                <div class="flex justify-center items-center gap-3 md:gap-4" id="timer">
+                    <!-- Timer injected via JS -->
+                    <div class="text-xl text-gray-500">Loading Timer...</div>
+                </div>
+                <div class="mt-3 inline-block bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">
+                    Only 11 Spots Left
+                </div>
+            </div>
+
+            <!-- Main CTA Button -->
+            <a href="https://t.me/+rURidxuma1czNmRk" target="_blank" class="btn-telegram block w-full rounded-xl py-4 md:py-5 text-center text-white font-bold text-lg md:text-xl mb-10 uppercase tracking-wide">
+                <i class="fab fa-telegram-plane mr-2 text-2xl align-middle"></i> Join Channel For Free
+            </a>
+
+            <!-- Features Grid (Responsive: 1 col mobile, 2 cols desktop) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <!-- Feature 1 -->
+                <div class="feature-box rounded-xl p-4 flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 shrink-0 mt-1">
+                        <i class="fas fa-check-double text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-white">Daily Sure Sessions</h3>
+                        <p class="text-gray-400 text-xs md:text-sm mt-1">Highly accurate session predictions for every major match.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-box rounded-xl p-4 flex items-start gap-4 border-l-green-400">
+                    <div class="w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center text-yellow-400 shrink-0 mt-1">
+                        <i class="fas fa-coins text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-white">100% Free Toss</h3>
+                        <p class="text-gray-400 text-xs md:text-sm mt-1">Get the exact toss winner before the coin drops.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-box rounded-xl p-4 flex items-start gap-4 border-l-blue-400">
+                    <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 shrink-0 mt-1">
+                        <i class="fas fa-chart-line text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-white">Jackpot Matches</h3>
+                        <p class="text-gray-400 text-xs md:text-sm mt-1">Exclusive alerts for high-return jackpot games.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-box rounded-xl p-4 flex items-start gap-4 border-l-red-400">
+                    <div class="w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center text-red-400 shrink-0 mt-1">
+                        <i class="fas fa-bolt text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-white">Live Updates</h3>
+                        <p class="text-gray-400 text-xs md:text-sm mt-1">Real-time match analysis and perfect entry points.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Proof -->
+            <div class="text-center pt-4 border-t border-white/10">
+                <div class="flex justify-center text-brandGold text-sm mb-2 gap-1">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-300 text-sm italic">"Trusted by 45,000+ active users daily."</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Sticky Mobile CTA Footer (Only shows on small screens) -->
+    <div class="fixed bottom-0 left-0 w-full p-4 bg-brandDark/95 backdrop-blur-md border-t border-white/10 z-50 md:hidden">
+        <a href="https://t.me/+rURidxuma1czNmRk" target="_blank" class="btn-telegram flex w-full rounded-xl py-4 items-center justify-center text-white font-bold text-lg uppercase tracking-wide">
+            Tap Here To Join Free <i class="fab fa-telegram-plane ml-2"></i>
+        </a>
+    </div>
+
+    <!-- Countdown Timer Script -->
+    <script>
+        function startTimer() {
+            // Set timer for 15 minutes (900 seconds)
+            let time = 14 * 60 + 59; 
+            const timerEl = document.getElementById('timer');
+            
+            const interval = setInterval(() => {
+                let m = Math.floor(time / 60);
+                let s = time % 60;
+                
+                m = m < 10 ? '0' + m : m;
+                s = s < 10 ? '0' + s : s;
+                
+                timerEl.innerHTML = `
+                    <div class="timer-block px-4 md:px-6 py-2 md:py-3">
+                        <span class="text-3xl md:text-4xl font-black text-white tracking-widest">${m}</span>
+                        <div class="text-[10px] text-gray-500 uppercase font-bold mt-1">Minutes</div>
+                    </div>
+                    <div class="text-red-500 text-3xl font-bold animate-pulse-fast pb-5">:</div>
+                    <div class="timer-block px-4 md:px-6 py-2 md:py-3">
+                        <span class="text-3xl md:text-4xl font-black text-white tracking-widest">${s}</span>
+                        <div class="text-[10px] text-gray-500 uppercase font-bold mt-1">Seconds</div>
+                    </div>
+                `;
+                
+                if(time > 0) {
+                    time--;
+                } else {
+                    time = 14 * 60 + 59; // Reset
+                }
+            }, 1000);
+        }
+        
+        document.addEventListener('DOMContentLoaded', startTimer);
+    </script>
+</body>
+</html>
